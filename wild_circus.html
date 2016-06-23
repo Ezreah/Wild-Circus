@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.min.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.min.css" rel="stylesheet" />
+
+  <title>Wild Circus</title>
+
+</head>
+
+<body>
+
+  <header>
+    <div class="fadeIn">
+      <div class="header">                          
+        <div class="title">
+          <div class="logo" id="cssanim"><img src="https://i.imgur.com/IstWEiX.png" alt="photo hat" /></div>
+          <h1>Wild<br/>&emsp;&emsp;Circus</h1>
+        </div>       
+      </div> 
+    </div>                                                     
+  </header>
+
+  <div class="introduction">Are you ready to experience new sensations ? Enter a world where reality and fiction merge through a moving story.</div>
+  <div class="none"></div> 
+
+  <div class="performances">
+    <div class="content" id="clown"> 
+      <div class="title"><h2>“ I promise , I'll stop ! ”</h2></div> 
+      <div class="description"><p>These pranksters have a passion for laughter, and with their wacky antics, clever talents and hilarious parodies, they’re taking comedy to the extreme! From expert juggling to over-the-top stilt walking to guffaw-worthy gags — these energetic and imaginative young performers continue to make history as they carry on the celebrated art of clowning by entertaining Children Of All Ages! </p> </div>
+      <div class="image">
+        <ul class="bxslider">
+          <li><img src="https://i.imgur.com/WnSaeQi.jpg" /></li>
+          <li><img src="https://i.imgur.com/7ZRNzL7.jpg" /></li>
+          <li><img src="https://i.imgur.com/zAkFuQO.jpg" /></li>
+          <li><img src="https://i.imgur.com/iQsaFlD.jpg" /></li>
+        </ul> 
+      </div>
+    </div>    
+    <div class="feature"></div>
+    <div class="none"></div>         
+    <div class="content" id="wildcat"> 
+      <div class="title"><h2>Wildcat's show</h2></div> 
+      <div class="description"><p>Tabayara Maluenda, aka “Taba,” is a sixth-generation circus performer who knows how to build trust with tigers. Performing for Wild Cirucs is Taba’s dream come true. Every day he looks forward to the moment when the arena darkens and the spotlight beams upon his majestic big cats. Taba’s infectious energy, charisma and passion for performing knows no bounds, as Taba sees family where others see danger! Taba and his entourage of 16 exotic Bengal tigers demonstrate an intimate bond between human and animal that is unforgettable!</p></div>
+      <div class="image">
+        <ul class="bxslider">
+          <li><img src="https://i.imgur.com/WlOnZSi.jpg" /></li>
+          <li><img src="https://i.imgur.com/XQolfOL.jpg" /></li>
+          <li><img src="https://i.imgur.com/7MegGFm.jpg" /></li>
+          <li><img src="https://i.imgur.com/N0R4RcT.jpg" /></li>
+        </ul>
+      </div>
+    </div>          
+    <div class="feature"></div>
+    <div class="none"></div>     
+    <div class="content" id="acrobat">                       
+      <div class="title"><h2>Acrobats</h2></div>
+      <div class="description"><p>Acrobatics is a great skill to offer at any event because every member of your audience can relate to it. Whilst other circus skills generally involve a prop – acrobatics often just uses the human body – and the impressive stunts performed by the artists really resonate with the crowd. We offer both tumbling (flips and spins) as well as duo or group acro-balance acts. Our acrobats are available for both stage shows as well as walkabout performance.</p></div>
+      <div class="image">
+        <ul class="bxslider">
+          <li><img src="https://i.imgur.com/vyUyhhZ.jpg" /></li>
+          <li><img src="https://i.imgur.com/3w982jr.jpg" /></li>
+          <li><img src="https://i.imgur.com/Wx0ao6q.jpg" /></li>
+          <li><img src="https://i.imgur.com/HK0Nzj6.jpg" /></li>
+        </ul>
+      </div>
+    </div>      
+    <div class="feature"></div>
+    <div class="none"></div> 
+    <div id="button"><a href="#">BACK TO TOP</a></div>
+    <div class="logo" id="cssanim2"><img src="https://i.imgur.com/IstWEiX.png" alt="photo hat" /></div>
+
+    <div class="content" id="magician">
+      <div class="title"><h2>Magician</h2></div>
+      <div class="description"><p>“What's a circus without illusion!” Our shows are build from a story. A story that lifts people in an unknown world filled with love, passion, sadness, joy, … emotions are a key in our showings. If we can make people “feel”, our mission is accomplished. Not wondering about the “how”, but pure enjoyment and experience are our targets.</p></div>
+      <div class="image">
+        <ul class="bxslider_magician">
+          <li><img src="https://i.imgur.com/bsdEtqG.jpg" /></li>
+          <li><img src="https://i.imgur.com/RCLk3Jz.jpg" /></li>
+          <li><img src="https://i.imgur.com/j8JrQf4.jpg" /></li>
+          <li><img src="https://i.imgur.com/UcVtq4S.jpg" /></li>
+        </ul>
+      </div>    
+    </div>
+    <div class="none"></div>  
+  </div>
+
+  <footer>
+    <h3>Contact</h3><a href="#mail">contact.@wildcircus.com</a><br/> 
+    Copyright Wild Circus - Tous droits réservés
+  </footer>
+
+  <script type="text/javascript">
+  $(document).ready(function(){
+    $('#cssanim2, #magician').hide();
+    $('.bxslider').bxSlider({
+      "slideWidth":400,
+      "pager":false
+    });
+    $('#button a').click(function () {
+      $("html, body").animate({ scrollTop: 0 }, "slow", function(){
+        $('#button').hide();
+        $('#cssanim').addClass('magic_top');
+        setTimeout(
+          function(){
+            $("html, body").animate({ scrollTop: $(document).height() }, 1000, function (){
+              $('#cssanim2').fadeIn(1000);
+              $('#cssanim2').addClass('magic_bottom');
+              setTimeout(function(){
+                $('#cssanim2').fadeOut(function(){
+                  $('#magician').fadeIn();
+                  $(document).ready(function(){
+                    $('.bxslider_magician').bxSlider({
+                      "slideWidth":400,
+                      "pager":false
+                    });
+                  })
+                });
+              }, 1500)
+            })},
+            2000
+            );
+        setTimeout(function(){
+          $('#cssanim').removeClass('magic_top');}, 3500
+          );
+      });
+    });
+    $(function() {
+      $('.header').fadeIn(2000);
+    });
+  });
+</script>
+</body>
+</html>
